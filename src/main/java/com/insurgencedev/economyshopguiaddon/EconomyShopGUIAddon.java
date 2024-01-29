@@ -5,7 +5,7 @@ import org.insurgencedev.insurgenceboosters.api.addon.IBoostersAddon;
 import org.insurgencedev.insurgenceboosters.api.addon.InsurgenceBoostersAddon;
 import org.insurgencedev.insurgenceboosters.libs.fo.Common;
 
-@IBoostersAddon(name = "EconomyShopGUIAddon", version = "1.0.1", author = "InsurgenceDev", description = "EconomyShopGUI Support")
+@IBoostersAddon(name = "EconomyShopGUIAddon", version = "1.0.2", author = "InsurgenceDev", description = "EconomyShopGUI Support")
 public class EconomyShopGUIAddon extends InsurgenceBoostersAddon {
 
     @Override

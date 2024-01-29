@@ -12,7 +12,7 @@ public final class EconomyShopEventListener implements Listener {
     public void onSell(PreTransactionEvent event) {
         final String TYPE = "Sell";
         final String NAMESPACE = "ECONOMY_SHOPGUI";
-        final double[] totalMulti = {1};
+        final double[] totalMulti = {0};
 
         BoosterFindResult pResult = IBoosterAPI.INSTANCE.getCache(event.getPlayer()).getBoosterDataManager().findActiveBooster(TYPE, NAMESPACE);
         if (pResult instanceof BoosterFindResult.Success boosterResult) {
@@ -24,7 +24,9 @@ public final class EconomyShopEventListener implements Listener {
             return null;
         }, () -> null);
 
-        event.setPrice(calculateAmount(event.getAmount(), totalMulti[0]));
+        if (totalMulti[0] > 0) {
+            event.setPrice(calculateAmount(event.getAmount(), totalMulti[0]));
+        }
     }
 
     private long calculateAmount(double amount, double multi) {
