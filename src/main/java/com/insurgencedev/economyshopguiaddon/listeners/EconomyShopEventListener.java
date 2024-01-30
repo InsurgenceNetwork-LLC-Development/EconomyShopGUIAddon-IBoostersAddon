@@ -29,7 +29,7 @@ public final class EconomyShopEventListener implements Listener {
         }
     }
 
-    private long calculateAmount(double amount, double multi) {
-        return (long) (amount * (multi < 1 ? 1 + multi : multi));
+    private double calculateAmount(double amount, double multi) {
+        return amount * (multi < 1 ? 1 + multi : multi);
     }
 }
