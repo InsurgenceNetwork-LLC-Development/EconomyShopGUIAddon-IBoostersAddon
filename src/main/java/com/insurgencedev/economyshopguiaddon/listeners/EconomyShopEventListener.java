@@ -25,7 +25,7 @@ public final class EconomyShopEventListener implements Listener {
         }, () -> null);
 
         if (totalMulti[0] > 0) {
-            event.setPrice(calculateAmount(event.getAmount(), totalMulti[0]));
+            event.setPrice(calculateAmount(event.getPrice(), totalMulti[0]));
         }
     }
 

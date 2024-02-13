@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67966854-f432-4058-8830-dc8a87848bfc" name="Changes" comment="fixed multi">
+    <list default="true" id="67966854-f432-4058-8830-dc8a87848bfc" name="Changes" comment="accounts for decimal values">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/insurgencedev/economyshopguiaddon/listeners/EconomyShopEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/insurgencedev/economyshopguiaddon/listeners/EconomyShopEventListener.java" afterDir="false" />
     </list>
@@ -122,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706497852191</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="accounts for decimal values">
+      <option name="closed" value="true" />
+      <created>1706627305649</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706627305649</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -130,6 +138,7 @@
     <MESSAGE value="multi handler update" />
     <MESSAGE value="api jar update" />
     <MESSAGE value="fixed multi" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed multi" />
+    <MESSAGE value="accounts for decimal values" />
+    <option name="LAST_COMMIT_MESSAGE" value="accounts for decimal values" />
   </component>
 </project>
