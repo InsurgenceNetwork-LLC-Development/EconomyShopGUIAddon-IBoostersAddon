@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67966854-f432-4058-8830-dc8a87848bfc" name="Changes" comment="accounts for decimal values">
+    <list default="true" id="67966854-f432-4058-8830-dc8a87848bfc" name="Changes" comment="fixed incorrect boost calculation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/insurgencedev/economyshopguiaddon/EconomyShopGUIAddon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/insurgencedev/economyshopguiaddon/EconomyShopGUIAddon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/insurgencedev/economyshopguiaddon/listeners/EconomyShopEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/insurgencedev/economyshopguiaddon/listeners/EconomyShopEventListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706627305649</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed incorrect boost calculation">
+      <option name="closed" value="true" />
+      <created>1707794013388</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707794013388</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -139,6 +149,7 @@
     <MESSAGE value="api jar update" />
     <MESSAGE value="fixed multi" />
     <MESSAGE value="accounts for decimal values" />
-    <option name="LAST_COMMIT_MESSAGE" value="accounts for decimal values" />
+    <MESSAGE value="fixed incorrect boost calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed incorrect boost calculation" />
   </component>
 </project>

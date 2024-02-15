@@ -8,8 +8,12 @@ import org.insurgencedev.insurgenceboosters.data.BoosterFindResult;
 
 public final class EconomyShopEventListener implements Listener {
 
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void onSell(PreTransactionEvent event) {
+        if (!event.getTransactionType().getMode().equalsIgnoreCase("sold")) {
+            return;
+        }
+
         final String TYPE = "Sell";
         final String NAMESPACE = "ECONOMY_SHOPGUI";
         final double[] totalMulti = {0};
