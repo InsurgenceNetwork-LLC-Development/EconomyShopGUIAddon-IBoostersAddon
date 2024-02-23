@@ -1,6 +1,7 @@
 package com.insurgencedev.economyshopguiaddon.listeners;
 
 import me.gypopo.economyshopgui.api.events.PreTransactionEvent;
+import me.gypopo.economyshopgui.util.Transaction;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.insurgencedev.insurgenceboosters.api.IBoosterAPI;
@@ -10,7 +11,8 @@ public final class EconomyShopEventListener implements Listener {
 
     @EventHandler(ignoreCancelled = true)
     public void onSell(PreTransactionEvent event) {
-        if (!event.getTransactionType().getMode().equalsIgnoreCase("sold")) {
+        Transaction.Type type = event.getTransactionType();
+        if (!type.getMode().equalsIgnoreCase("sold")) {
             return;
         }
 
@@ -29,6 +31,13 @@ public final class EconomyShopEventListener implements Listener {
         }, () -> null);
 
         if (totalMulti[0] > 0) {
+            if (type.equals(Transaction.Type.SELL_GUI_SCREEN) || type.equals(Transaction.Type.SELL_ALL_SCREEN) ||
+                    type.equals(Transaction.Type.SELL_ALL_COMMAND)) {
+
+                event.getPrices().replaceAll((k, v) -> calculateAmount(v, totalMulti[0]));
+                return;
+            }
+
             event.setPrice(calculateAmount(event.getPrice(), totalMulti[0]));
         }
     }
